@@ -38,11 +38,16 @@ This repository contains:
 Cpp-Practice/
 │
 ├── C++/
-│   ├── armstrong_number.cpp
-│   ├── automorphic.cpp
-│   ├── factor_of_number.cpp
-│   ├── factorial.cpp
-│   └── reverse_string.cpp
+|   |── 1. Sorts
+|   |-- 2. Searches
+|   |-- 3. Linked List
+|   |   ├─- armstrong_number.cpp
+│   |   ├── automorphic.cpp
+│   |   ├── factor_of_number.cpp
+│   |   ├── factorial.cpp
+│   |   └── reverse_string.cpp
+|   |-- 4. Stack
+│   
 │
 ├── DSA/
 │   └── Linked List/
