@@ -42,7 +42,6 @@ This repository contains:
 #### 1️⃣ [Class and Object](./C++/1.%20Class%20and%20Object)
 - [`access_specifier.cpp`](./C++/1.%20Class%20and%20Object/access_specifier.cpp)
 - [`constructor_destructor.cpp`](./C++/1.%20Class%20and%20Object/constructor_destructor.cpp)
-- [`constructor_destructor.exe`](./C++/1.%20Class%20and%20Object/constructor_destructor.exe)
 
 #### 2️⃣ [Constructor & Types](./C++/2.%20Constructor%20&%20Types)
 
