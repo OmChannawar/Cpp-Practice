@@ -69,8 +69,7 @@ If you have suggestions, optimizations, or want to share better approaches — f
 ## 📬 Connect With Me
 
 - 💼 **GitHub:** [Om Channawar](https://github.com/OmChannawar)  
-- 🌐 **LinkedIn:** [Om Channawar](https://www.linkedin.com/in/omchannawar)  
-- ✉️ **Email:** omchannawar@example.com *(optional — remove if private)*  
+- 🌐 **LinkedIn:** [Om Channawar](https://www.linkedin.com/in/om-channawar-466873312)   
 
 ---
 
