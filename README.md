@@ -33,28 +33,61 @@ This repository contains:
 
 ---
 
-## 📁 Folder Structure
-```
-Cpp-Practice/
-│
-├── C++/
-|   |── 1. Sorts
-|   |-- 2. Searches
-|   |-- 3. Linked List
-|   |   ├─- armstrong_number.cpp
-│   |   ├── automorphic.cpp
-│   |   ├── factor_of_number.cpp
-│   |   ├── factorial.cpp
-│   |   └── reverse_string.cpp
-|   |-- 4. Stack
-│   
-│
-├── DSA/
-│   └── Linked List/
-│       ├── insert_delete_singly.cpp
-│
-└── README.md
-```
+ ## 📂 Folder Structure
+
+### 💻 [C++](./C++)
+<details>
+<summary>▶️ Expand C++ Topics</summary>
+
+#### 1️⃣ [Class and Object](./C++/1.%20Class%20and%20Object)
+- [`access_specifier.cpp`](./C++/1.%20Class%20and%20Object/access_specifier.cpp)
+- [`constructor_destructor.cpp`](./C++/1.%20Class%20and%20Object/constructor_destructor.cpp)
+- [`constructor_destructor.exe`](./C++/1.%20Class%20and%20Object/constructor_destructor.exe)
+
+#### 2️⃣ [Constructor & Types](./C++/2.%20Constructor%20&%20Types)
+
+#### 3️⃣ [Operator OverLoading](./C++/3.%20Operator%20OverLoading)
+
+#### 4️⃣ [Dynamic Memory](./C++/4.%20Dynamic%20Memory)
+
+#### 5️⃣ [Function Types, Friend Class](./C++/5.%20Function%20Types,%20Friend%20Class)
+- [1. Static Function](./C++/5.%20Function%20Types,%20Friend%20Class/1.%20Static%20Function)
+- [2. Inline Function](./C++/5.%20Function%20Types,%20Friend%20Class/2.%20Inline%20Function)
+- [3. Friend Function & Class](./C++/5.%20Function%20Types,%20Friend%20Class/3.%20Friend%20Function%20&%20Class)
+
+#### 6️⃣ [Inheritance](./C++/6.%20Inheritance)
+- [1. Single](./C++/6.%20Inheritance/1.%20Single)
+- [2. Multilevel](./C++/6.%20Inheritance/2.%20Multilevel)
+- [3. Hierarchical](./C++/6.%20Inheritance/3.%20Hierarchical)
+- [4. Multiple](./C++/6.%20Inheritance/4.%20Multiple)
+- [5. Hybrid](./C++/6.%20Inheritance/5.%20Hybrid)
+
+#### 7️⃣ [Polymorphism](./C++/7.%20Polymorphism)
+
+#### 🔢 [Number System](./C++/Number%20System)
+</details>
+
+---
+
+### 📘 [DSA](./DSA)
+<details>
+<summary>▶️ Expand DSA Topics</summary>
+
+#### 1️⃣ [Sorts](./DSA/1.%20Sorts)
+
+#### 2️⃣ [Searches](./DSA/2.%20Searches)
+
+#### 3️⃣ [Linked List](./DSA/3.%20Linked%20List)
+- [1. Singly](./DSA/3.%20Linked%20List/1.%20Singly)
+- [2. Doubly](./DSA/3.%20Linked%20List/2.%20Doubly)
+- [3. Circular](./DSA/3.%20Linked%20List/3.%20Circular)
+
+#### 4️⃣ [Stack](./DSA/4.%20Stack)
+</details>
+
+---
+
+📄 [`README.md`](./README.md)
 
 ---
 
