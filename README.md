@@ -34,7 +34,22 @@ This repository contains:
 ---
 
 ## 📁 Folder Structure
-
+```
+Cpp-Practice/
+│
+├── C++/
+│   ├── armstrong_number.cpp
+│   ├── automorphic.cpp
+│   ├── factor_of_number.cpp
+│   ├── factorial.cpp
+│   └── reverse_string.cpp
+│
+├── DSA/
+│   └── Linked List/
+│       ├── insert_delete_singly.cpp
+│
+└── README.md
+```
 
 ---
 
