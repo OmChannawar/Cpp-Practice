@@ -34,7 +34,7 @@ This repository contains:
 ---
 
 ## 📂 Folder Structure
-
+```
 <!-- FOLDER_STRUCTURE_START -->
 
 ├── .
@@ -64,8 +64,8 @@ This repository contains:
 │   │   ├── 2. Constructor & Destructor
 │   │   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/2. Constructor & Destructor/constructor_destructor.cpp)
 └── [`README.md`](./README.md)
-```
 <!-- FOLDER_STRUCTURE_END -->
+```
 
 ## 📚 Learning Goals
 
