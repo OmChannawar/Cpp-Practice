@@ -8,7 +8,7 @@ IGNORED_FOLDERS = {".git", ".github", "__pycache__", ".vscode"}
 MARKER_START = "<!-- FOLDER_STRUCTURE_START -->"
 MARKER_END = "<!-- FOLDER_STRUCTURE_END -->"
 # The REPO_URL is for the 'main' branch content viewer, which is correct.
-REPO_URL = "https://github.com/OmChannawar/Cpp-Practice/blob/main"
+REPO_URL = "[https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)"
 # ====================
 
 def generate_tree(start_path="."):
@@ -56,11 +56,11 @@ def generate_tree(start_path="."):
     # Add README link as the last entry, using └──
     tree += "└── [`README.md`](./README.md)\n"
     
-    # === CRITICAL FIX ===
-    # We removed the following lines:
-    # return "```\n" + tree + "```\n"
-    # This ensures the output is treated as Markdown, not plain code.
-    return tree
+    # === NEW FIX ===
+    # Wrap the output in a plain fenced code block. 
+    # This is a known workaround on GitHub to preserve tree spacing 
+    # while allowing Markdown links (like [link](url)) to remain clickable inside the block.
+    return "```\n" + tree + "```\n"
 
 def update_readme():
     if not os.path.exists(ROOT_README):
@@ -76,8 +76,7 @@ def update_readme():
 
     new_tree = generate_tree(".")
     
-    # FINAL CRITICAL FIX: We don't need to explicitly add newlines here, 
-    # but having them ensures the new content is cleanly separated from the markers.
+    # The new tree now correctly includes the wrapping ```\n ... \n```
     replacement = f"{MARKER_START}\n{new_tree}{MARKER_END}"
 
     if MARKER_START in content and MARKER_END in content:
