@@ -99,15 +99,6 @@ This repository contains:
 
 ---
 
-## 🧩 Future Plans
-
-- 🧪 Add unit tests for DSA programs  
-- 🎨 Include interactive visual explanations  
-- 💻 Create a collection of advanced problems (Dynamic Programming, Backtracking, etc.)  
-- 📊 Add performance analysis for key algorithms
-
----
-
 ## 🤝 Contributing
 
 Contributions are always welcome!  
