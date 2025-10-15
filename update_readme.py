@@ -33,12 +33,12 @@ def generate_tree(start_path="."):
         # 2. File Line Construction
         
         # Calculate the final prefix for the files inside the current folder
-        # If not root, files are children (one more level of indentation)
         file_indent_prefix = indent_lines + ("│   " if not is_root else "")
         
         file_list = sorted(f for f in files if os.path.splitext(f)[1] in ALLOWED_EXTENSIONS)
         
-        for f in file_list:
+        # Simple structure: Prefix + Connector + Link
+        for i, f in enumerate(file_list):
             full_rel_path = os.path.join(root, f).replace("\\", "/")
             
             # CRITICAL FIX: Clean up the leading "./" from the file path for a cleaner URL
@@ -47,14 +47,20 @@ def generate_tree(start_path="."):
                  
             file_url = f"{REPO_URL}/{full_rel_path}"
             
-            # The tree structure for files using ├──
-            tree += f"{file_indent_prefix}├── [`{f}`]({file_url})\n"
+            # The connector needs to change based on context, but let's stick to simple ├── for links 
+            # and rely on the last line being the README link for the final └──
+            connector = "├──"
+
+            tree += f"{file_indent_prefix}{connector} [`{f}`]({file_url})\n"
             
     # Add README link as the last entry, using └──
     tree += "└── [`README.md`](./README.md)\n"
     
-    # Wrap in Markdown code block
-    return "```\n" + tree + "```\n"
+    # === CRITICAL FIX ===
+    # We removed the following lines:
+    # return "```\n" + tree + "```\n"
+    # This ensures the output is treated as Markdown, not plain code.
+    return tree
 
 def update_readme():
     if not os.path.exists(ROOT_README):
@@ -70,11 +76,12 @@ def update_readme():
 
     new_tree = generate_tree(".")
     
-    # The new tree includes the wrapping ```\n ... \n```
+    # FINAL CRITICAL FIX: We don't need to explicitly add newlines here, 
+    # but having them ensures the new content is cleanly separated from the markers.
     replacement = f"{MARKER_START}\n{new_tree}{MARKER_END}"
 
     if MARKER_START in content and MARKER_END in content:
-        # The regex pattern uses `re.DOTALL` to match across newlines
+        # This regex ensures we replace *everything* between the two markers, including any existing triple backticks.
         new_content = re.sub(
             f"{MARKER_START}.*?{MARKER_END}",
             replacement,
