@@ -36,7 +36,7 @@ This repository contains:
 ## 📂 Folder Structure
 
 <!-- FOLDER_STRUCTURE_START -->
-```
+
 ├── .
 │   ├── C++
 │   │   ├── 1. Class and Object
@@ -81,7 +81,7 @@ This repository contains:
 │   │   ├── 4. Stack
 │   │   ├── Hash Table
 └── [`README.md`](./README.md)
-```
+
 <!-- FOLDER_STRUCTURE_END -->
 
 ## 📚 Learning Goals
