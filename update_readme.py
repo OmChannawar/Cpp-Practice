@@ -8,7 +8,7 @@ IGNORED_FOLDERS = {".git", ".github", "__pycache__", ".vscode"}
 MARKER_START = "<!-- FOLDER_STRUCTURE_START -->"
 MARKER_END = "<!-- FOLDER_STRUCTURE_END -->"
 # The REPO_URL is for the 'main' branch content viewer, which is correct.
-REPO_URL = "[https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)"
+REPO_URL = "https://github.com/OmChannawar/Cpp-Practice/blob/main"
 # ====================
 
 def generate_tree(start_path="."):
@@ -47,8 +47,6 @@ def generate_tree(start_path="."):
                  
             file_url = f"{REPO_URL}/{full_rel_path}"
             
-            # The connector needs to change based on context, but let's stick to simple ├── for links 
-            # and rely on the last line being the README link for the final └──
             connector = "├──"
 
             tree += f"{file_indent_prefix}{connector} [`{f}`]({file_url})\n"
@@ -56,11 +54,10 @@ def generate_tree(start_path="."):
     # Add README link as the last entry, using └──
     tree += "└── [`README.md`](./README.md)\n"
     
-    # === NEW FIX ===
-    # Wrap the output in a plain fenced code block. 
-    # This is a known workaround on GitHub to preserve tree spacing 
-    # while allowing Markdown links (like [link](url)) to remain clickable inside the block.
-    return "```\n" + tree + "```\n"
+    # === FINAL AND MOST ROBUST FIX ===
+    # Use HTML <pre> tags to guarantee whitespace and line breaks are preserved (fixing formatting)
+    # Since this is not a fenced code block, internal Markdown links will be clickable.
+    return "<pre>\n" + tree + "</pre>\n"
 
 def update_readme():
     if not os.path.exists(ROOT_README):
@@ -76,11 +73,11 @@ def update_readme():
 
     new_tree = generate_tree(".")
     
-    # The new tree now correctly includes the wrapping ```\n ... \n```
+    # The new tree now correctly includes the wrapping <pre>\n ... \n</pre>
     replacement = f"{MARKER_START}\n{new_tree}{MARKER_END}"
 
     if MARKER_START in content and MARKER_END in content:
-        # This regex ensures we replace *everything* between the two markers, including any existing triple backticks.
+        # This regex ensures we replace *everything* between the two markers, including any old backticks or <pre> tags.
         new_content = re.sub(
             f"{MARKER_START}.*?{MARKER_END}",
             replacement,
