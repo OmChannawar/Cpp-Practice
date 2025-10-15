@@ -63,6 +63,72 @@ C++ Practice/
 
 ---
 
+# 📘 C++ OOPs & DSA Topics
+
+## 🧱 Object-Oriented Programming (OOPs) in C++
+
+### Contents
+- **Class and Objects**
+- **Constructors**
+  - Default Constructor  
+  - Parameterized Constructor  
+  - Copy Constructor  
+- **Destructor**
+
+---
+
+## ⚙️ Data Structures and Algorithms (DSA)
+
+### Sorting Algorithms
+- **Bubble Sort**
+- **Insertion Sort**
+- **Selection Sort**
+- **Quick Sort**
+- **Merge Sort**
+
+---
+
+### Searching Algorithms
+- **Fibonacci Search**
+- **Sentinel Search**
+
+---
+
+### Linked Lists (Menu Driven)
+
+#### Singly Linked List
+- Insert:
+  - At Begin  
+  - At Position  
+  - At Last  
+- Delete:
+  - From Begin  
+  - From Last  
+- Display  
+
+#### Doubly Linked List
+- (Insert, Delete, Display operations)
+
+#### Circular Linked List
+- (Insert, Delete, Display operations)
+
+---
+
+### Stack
+- Push  
+- Pop  
+- Display  
+
+---
+
+### Queue
+- Enqueue  
+- Dequeue  
+- Display  
+
+
+---
+
 ## 📚 Learning Goals
 
 - Master **fundamental algorithms** and data structures  
