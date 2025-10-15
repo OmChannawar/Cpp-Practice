@@ -36,32 +36,34 @@ This repository contains:
 ## 📂 Folder Structure
 
 <!-- FOLDER_STRUCTURE_START -->
+```
 ├── DSA
 │   ├── 2_Searches
-│   │   ├── [`fibonnace_search.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/2_Searches/fibonnace_search.cpp)
-│   │   ├── [`sentinal_search.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/2_Searches/sentinal_search.cpp)
+│   │   ├── [`fibonnace_search.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/DSA/2_Searches/fibonnace_search.cpp)
+│   │   ├── [`sentinal_search.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/DSA/2_Searches/sentinal_search.cpp)
 │   ├── 3_Linked_List
 │   │   ├── 1_Singly
-│   │   │   ├── [`singly.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/3_Linked_List/1_Singly/singly.cpp)
+│   │   │   ├── [`singly.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/DSA/3_Linked_List/1_Singly/singly.cpp)
 │   ├── 1_Sorts
-│   │   ├── [`bubble_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1_Sorts/bubble_sort.cpp)
-│   │   ├── [`insertion_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1_Sorts/insertion_sort.cpp)
-│   │   ├── [`merge_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1_Sorts/merge_sort.cpp)
-│   │   ├── [`quick_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1_Sorts/quick_sort.cpp)
-│   │   ├── [`selection_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1_Sorts/selection_sort.cpp)
+│   │   ├── [`bubble_sort.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/DSA/1_Sorts/bubble_sort.cpp)
+│   │   ├── [`insertion_sort.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/DSA/1_Sorts/insertion_sort.cpp)
+│   │   ├── [`merge_sort.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/DSA/1_Sorts/merge_sort.cpp)
+│   │   ├── [`quick_sort.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/DSA/1_Sorts/quick_sort.cpp)
+│   │   ├── [`selection_sort.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/DSA/1_Sorts/selection_sort.cpp)
 ├── C++
 │   ├── 2_Constructor_&_Destructor
-│   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/2_Constructor_&_Destructor/constructor_destructor.cpp)
+│   │   ├── [`constructor_destructor.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/C++/2_Constructor_&_Destructor/constructor_destructor.cpp)
 │   ├── Number_System
-│   │   ├── [`armstrong_number.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number_System/armstrong_number.cpp)
-│   │   ├── [`automorphic.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number_System/automorphic.cpp)
-│   │   ├── [`factor_of_number.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number_System/factor_of_number.cpp)
-│   │   ├── [`factorial.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number_System/factorial.cpp)
-│   │   ├── [`reverse_string.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number_System/reverse_string.cpp)
+│   │   ├── [`armstrong_number.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/C++/Number_System/armstrong_number.cpp)
+│   │   ├── [`automorphic.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/C++/Number_System/automorphic.cpp)
+│   │   ├── [`factor_of_number.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/C++/Number_System/factor_of_number.cpp)
+│   │   ├── [`factorial.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/C++/Number_System/factorial.cpp)
+│   │   ├── [`reverse_string.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/C++/Number_System/reverse_string.cpp)
 │   ├── 1_Class_and_Object
-│   │   ├── [`access_specifier.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/1_Class_and_Object/access_specifier.cpp)
-│   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/1_Class_and_Object/constructor_destructor.cpp)
+│   │   ├── [`access_specifier.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/C++/1_Class_and_Object/access_specifier.cpp)
+│   │   ├── [`constructor_destructor.cpp`]([https://github.com/OmChannawar/Cpp-Practice/blob/main](https://github.com/OmChannawar/Cpp-Practice/blob/main)/C++/1_Class_and_Object/constructor_destructor.cpp)
 └── [`README.md`](./README.md)
+```
 <!-- FOLDER_STRUCTURE_END -->
 
 ## 📚 Learning Goals
