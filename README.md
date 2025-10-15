@@ -35,36 +35,29 @@ This repository contains:
 
 ## 📂 Folder Structure
 
-<!-- FOLDER_STRUCTURE_START -->
-<pre>
-├── DSA
-│   ├── 2_Searches
-│   │   ├── [`fibonnace_search.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/2_Searches/fibonnace_search.cpp)
-│   │   ├── [`sentinal_search.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/2_Searches/sentinal_search.cpp)
-│   ├── 3_Linked_List
-│   │   ├── 1_Singly
-│   │   │   ├── [`singly.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/3_Linked_List/1_Singly/singly.cpp)
-│   ├── 1_Sorts
-│   │   ├── [`bubble_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1_Sorts/bubble_sort.cpp)
-│   │   ├── [`insertion_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1_Sorts/insertion_sort.cpp)
-│   │   ├── [`merge_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1_Sorts/merge_sort.cpp)
-│   │   ├── [`quick_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1_Sorts/quick_sort.cpp)
-│   │   ├── [`selection_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1_Sorts/selection_sort.cpp)
+C++ Practice/
 ├── C++
-│   ├── 2_Constructor_&_Destructor
-│   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/2_Constructor_&_Destructor/constructor_destructor.cpp)
-│   ├── Number_System
-│   │   ├── [`armstrong_number.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number_System/armstrong_number.cpp)
-│   │   ├── [`automorphic.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number_System/automorphic.cpp)
-│   │   ├── [`factor_of_number.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number_System/factor_of_number.cpp)
-│   │   ├── [`factorial.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number_System/factorial.cpp)
-│   │   ├── [`reverse_string.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number_System/reverse_string.cpp)
-│   ├── 1_Class_and_Object
-│   │   ├── [`access_specifier.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/1_Class_and_Object/access_specifier.cpp)
-│   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/1_Class_and_Object/constructor_destructor.cpp)
-└── [`README.md`](./README.md)
-</pre>
-<!-- FOLDER_STRUCTURE_END -->
+│   ├── 1_Class & Object
+│   ├── 2_Constructor & Destructor
+│   ├── 3_Operator Overloading
+│   ├── 4_Dynamic Memory
+│   ├── 5_Function Types, Friend Class
+│   │   ├── 1_Static Function
+│   │   ├── 2_Inline Function
+│   │   └── 3_Friend Function & Class
+│   ├── 6_Inheritance
+│   ├── 7_Polymorphism
+│   └── Number System
+└── DSA
+    ├── 1_Sorts
+    ├── 2_Searches
+    ├── 3_Linked_List
+    │   ├── 1_Singly
+    │   ├── 2_Doubly
+    │   └── 3_Circular
+    ├── 4_Stack
+    ├── 5_Queue
+    └── Hash_Table
 
 ## 📚 Learning Goals
 
