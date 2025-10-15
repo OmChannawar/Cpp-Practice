@@ -7,27 +7,53 @@ ALLOWED_EXTENSIONS = {".cpp"}
 IGNORED_FOLDERS = {".git", ".github", "__pycache__", ".vscode"}
 MARKER_START = "<!-- FOLDER_STRUCTURE_START -->"
 MARKER_END = "<!-- FOLDER_STRUCTURE_END -->"
+# The REPO_URL is for the 'main' branch content viewer, which is correct.
 REPO_URL = "https://github.com/OmChannawar/Cpp-Practice/blob/main"
 # ====================
 
 def generate_tree(start_path="."):
     tree = ""
     for root, dirs, files in os.walk(start_path):
+        # Filter out ignored folders
         dirs[:] = [d for d in dirs if d not in IGNORED_FOLDERS]
-        level = root.replace(start_path, "").count(os.sep)
-        indent = "│   " * level
-        folder_name = os.path.basename(root) or "Cpp-Practice"
-        tree += f"{indent}├── {folder_name}\n"
+        
+        rel_root = os.path.relpath(root, start_path).replace("\\", "/")
+        is_root = (rel_root == ".")
+        
+        # Calculate the depth level for indentation lines
+        level = rel_root.count('/') if not is_root else 0
+        indent_lines = "│   " * level
 
-        for f in sorted(files):
-            ext = os.path.splitext(f)[1]
-            if ext in ALLOWED_EXTENSIONS:
-                rel_path = os.path.join(root, f).replace("\\", "/")
-                file_url = f"{REPO_URL}/{rel_path}"
-                tree += f"{indent}│   ├── [`{f}`]({file_url})\n"
+        # 1. Folder Line Construction
+        if not is_root:
+            folder_name = os.path.basename(root)
+            # Add the folder line with the correct prefix
+            tree += f"{indent_lines}├── {folder_name}\n"
 
-    # Add README link
+        # 2. File Line Construction
+        
+        # Calculate the final prefix for the files inside the current folder
+        # If not root, files are children (one more level of indentation)
+        file_indent_prefix = indent_lines + ("│   " if not is_root else "")
+        
+        file_list = sorted(f for f in files if os.path.splitext(f)[1] in ALLOWED_EXTENSIONS)
+        
+        for f in file_list:
+            full_rel_path = os.path.join(root, f).replace("\\", "/")
+            
+            # CRITICAL FIX: Clean up the leading "./" from the file path for a cleaner URL
+            if full_rel_path.startswith("./"):
+                 full_rel_path = full_rel_path[2:]
+                 
+            file_url = f"{REPO_URL}/{full_rel_path}"
+            
+            # The tree structure for files using ├──
+            tree += f"{file_indent_prefix}├── [`{f}`]({file_url})\n"
+            
+    # Add README link as the last entry, using └──
     tree += "└── [`README.md`](./README.md)\n"
+    
+    # Wrap in Markdown code block
     return "```\n" + tree + "```\n"
 
 def update_readme():
@@ -35,15 +61,23 @@ def update_readme():
         print("❌ README.md not found.")
         return
 
-    with open(ROOT_README, "r", encoding="utf-8") as f:
-        content = f.read()
+    try:
+        with open(ROOT_README, "r", encoding="utf-8") as f:
+            content = f.read()
+    except Exception as e:
+        print(f"❌ Error reading {ROOT_README}: {e}")
+        return
 
     new_tree = generate_tree(".")
+    
+    # The new tree includes the wrapping ```\n ... \n```
+    replacement = f"{MARKER_START}\n{new_tree}{MARKER_END}"
 
     if MARKER_START in content and MARKER_END in content:
+        # The regex pattern uses `re.DOTALL` to match across newlines
         new_content = re.sub(
             f"{MARKER_START}.*?{MARKER_END}",
-            f"{MARKER_START}\n{new_tree}{MARKER_END}",
+            replacement,
             content,
             flags=re.DOTALL,
         )
@@ -51,10 +85,12 @@ def update_readme():
         print("⚠️ Markers not found! Please add them around the folder structure section.")
         return
 
-    with open(ROOT_README, "w", encoding="utf-8") as f:
-        f.write(new_content)
-
-    print("✅ Folder structure updated successfully!")
+    try:
+        with open(ROOT_README, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        print("✅ Folder structure updated successfully!")
+    except Exception as e:
+        print(f"❌ Error writing to {ROOT_README}: {e}")
 
 if __name__ == "__main__":
     update_readme()
