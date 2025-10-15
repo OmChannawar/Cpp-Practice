@@ -88,7 +88,7 @@ C++ Practice/
 
 ---
 
-### Searching Algorithms
+### Searching Algorithms (www,google.com)
 - **Fibonacci Search**
 - **Sentinel Search**
 
