@@ -34,7 +34,7 @@ This repository contains:
 ---
 
 ## 📂 Folder Structure
-```
+
 <!-- FOLDER_STRUCTURE_START -->
 ```
 ├── DSA
@@ -65,7 +65,6 @@ This repository contains:
 └── [`README.md`](./README.md)
 ```
 <!-- FOLDER_STRUCTURE_END -->
-```
 
 ## 📚 Learning Goals
 
