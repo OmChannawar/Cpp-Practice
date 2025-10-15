@@ -33,62 +33,56 @@ This repository contains:
 
 ---
 
- ## 📂 Folder Structure
+## 📂 Folder Structure
 
-### 💻 [C++](./C++)
-<details>
-<summary>▶️ Expand C++ Topics</summary>
-
-#### 1️⃣ [Class and Object](./C++/1.%20Class%20and%20Object)
-- [`access_specifier.cpp`](./C++/1.%20Class%20and%20Object/access_specifier.cpp)
-- [`constructor_destructor.cpp`](./C++/1.%20Class%20and%20Object/constructor_destructor.cpp)
-
-#### 2️⃣ [Constructor & Types](./C++/2.%20Constructor%20&%20Types)
-
-#### 3️⃣ [Operator OverLoading](./C++/3.%20Operator%20OverLoading)
-
-#### 4️⃣ [Dynamic Memory](./C++/4.%20Dynamic%20Memory)
-
-#### 5️⃣ [Function Types, Friend Class](./C++/5.%20Function%20Types,%20Friend%20Class)
-- [1. Static Function](./C++/5.%20Function%20Types,%20Friend%20Class/1.%20Static%20Function)
-- [2. Inline Function](./C++/5.%20Function%20Types,%20Friend%20Class/2.%20Inline%20Function)
-- [3. Friend Function & Class](./C++/5.%20Function%20Types,%20Friend%20Class/3.%20Friend%20Function%20&%20Class)
-
-#### 6️⃣ [Inheritance](./C++/6.%20Inheritance)
-- [1. Single](./C++/6.%20Inheritance/1.%20Single)
-- [2. Multilevel](./C++/6.%20Inheritance/2.%20Multilevel)
-- [3. Hierarchical](./C++/6.%20Inheritance/3.%20Hierarchical)
-- [4. Multiple](./C++/6.%20Inheritance/4.%20Multiple)
-- [5. Hybrid](./C++/6.%20Inheritance/5.%20Hybrid)
-
-#### 7️⃣ [Polymorphism](./C++/7.%20Polymorphism)
-
-#### 🔢 [Number System](./C++/Number%20System)
-</details>
-
----
-
-### 📘 [DSA](./DSA)
-<details>
-<summary>▶️ Expand DSA Topics</summary>
-
-#### 1️⃣ [Sorts](./DSA/1.%20Sorts)
-
-#### 2️⃣ [Searches](./DSA/2.%20Searches)
-
-#### 3️⃣ [Linked List](./DSA/3.%20Linked%20List)
-- [1. Singly](./DSA/3.%20Linked%20List/1.%20Singly)
-- [2. Doubly](./DSA/3.%20Linked%20List/2.%20Doubly)
-- [3. Circular](./DSA/3.%20Linked%20List/3.%20Circular)
-
-#### 4️⃣ [Stack](./DSA/4.%20Stack)
-</details>
-
----
-
-📄 [`README.md`](./README.md)
-
----
+<!-- FOLDER_STRUCTURE_START -->
+```
+├── .
+│   ├── C++
+│   │   ├── 1. Class and Object
+│   │   │   ├── [`access_specifier.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/1. Class and Object/access_specifier.cpp)
+│   │   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/1. Class and Object/constructor_destructor.cpp)
+│   │   ├── 2. Constructor & Destructor
+│   │   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/2. Constructor & Destructor/constructor_destructor.cpp)
+│   │   ├── 3. Operator OverLoading
+│   │   ├── 4. Dynamic Memory
+│   │   ├── 5. Function Types, Friend Class
+│   │   │   ├── 1. Static Function
+│   │   │   ├── 2. Inline Function
+│   │   │   ├── 3. Friend Function & Class
+│   │   ├── 6. Inheritance
+│   │   │   ├── 1. Single
+│   │   │   ├── 2. Multilevel
+│   │   │   ├── 3. Hierarchical
+│   │   │   ├── 4. Multiple
+│   │   │   ├── 5. Hybrid
+│   │   ├── 7. Polymorphism
+│   │   ├── Number System
+│   │   │   ├── [`armstrong_number.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/Number System/armstrong_number.cpp)
+│   │   │   ├── [`automorphic.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/Number System/automorphic.cpp)
+│   │   │   ├── [`factor_of_number.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/Number System/factor_of_number.cpp)
+│   │   │   ├── [`factorial.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/Number System/factorial.cpp)
+│   │   │   ├── [`reverse_string.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/Number System/reverse_string.cpp)
+│   ├── DSA
+│   │   ├── 1. Sorts
+│   │   │   ├── [`bubble_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/1. Sorts/bubble_sort.cpp)
+│   │   │   ├── [`insertion_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/1. Sorts/insertion_sort.cpp)
+│   │   │   ├── [`merge_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/1. Sorts/merge_sort.cpp)
+│   │   │   ├── [`quick_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/1. Sorts/quick_sort.cpp)
+│   │   │   ├── [`selection_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/1. Sorts/selection_sort.cpp)
+│   │   ├── 2. Searches
+│   │   │   ├── [`fibonnace_search.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/2. Searches/fibonnace_search.cpp)
+│   │   │   ├── [`sentinal_search.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/2. Searches/sentinal_search.cpp)
+│   │   ├── 3. Linked_List
+│   │   │   ├── 1. Singly
+│   │   │   │   ├── [`singly.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/3. Linked_List/1. Singly/singly.cpp)
+│   │   │   ├── 2. Doubly
+│   │   │   ├── 3. Circular
+│   │   ├── 4. Stack
+│   │   ├── Hash Table
+└── [`README.md`](./README.md)
+```
+<!-- FOLDER_STRUCTURE_END -->
 
 ## 📚 Learning Goals
 
