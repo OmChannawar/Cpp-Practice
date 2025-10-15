@@ -36,49 +36,33 @@ This repository contains:
 ## 📂 Folder Structure
 
 <!-- FOLDER_STRUCTURE_START -->
-```
-├── C++
-│   ├── 1. Class and Object
-│   │   ├── [`access_specifier.cpp`]("https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/1. Class and Object/access_specifier.cpp")
-│   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/1. Class and Object/constructor_destructor.cpp)
-│   ├── 2. Constructor & Destructor
-│   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/2. Constructor & Destructor/constructor_destructor.cpp)
-│   ├── 3. Operator OverLoading
-│   ├── 4. Dynamic Memory
-│   ├── 5. Function Types, Friend Class
-│   │   ├── 1. Static Function
-│   │   ├── 2. Inline Function
-│   │   ├── 3. Friend Function & Class
-│   ├── 6. Inheritance
-│   │   ├── 1. Single
-│   │   ├── 2. Multilevel
-│   │   ├── 3. Hierarchical
-│   │   ├── 4. Multiple
-│   │   ├── 5. Hybrid
-│   ├── 7. Polymorphism
-│   ├── Number System
-│   │   ├── [`armstrong_number.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number System/armstrong_number.cpp)
-│   │   ├── [`automorphic.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number System/automorphic.cpp)
-│   │   ├── [`factor_of_number.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number System/factor_of_number.cpp)
-│   │   ├── [`factorial.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number System/factorial.cpp)
-│   │   ├── [`reverse_string.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/C++/Number System/reverse_string.cpp)
-├── DSA
-│   ├── 1. Sorts
-│   │   ├── [`bubble_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1. Sorts/bubble_sort.cpp)
-│   │   ├── [`insertion_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1. Sorts/insertion_sort.cpp)
-│   │   ├── [`merge_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1. Sorts/merge_sort.cpp)
-│   │   ├── [`quick_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1. Sorts/quick_sort.cpp)
-│   │   ├── [`selection_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/1. Sorts/selection_sort.cpp)
-│   ├── 2. Searches
-│   │   ├── [`fibonnace_search.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/2. Searches/fibonnace_search.cpp)
-│   │   ├── [`sentinal_search.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/2. Searches/sentinal_search.cpp)
-│   ├── 3. Linked_List
-│   │   ├── 1. Singly
-│   │   │   ├── [`singly.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/DSA/3. Linked_List/1. Singly/singly.cpp)
-│   │   ├── 2. Doubly
-│   │   ├── 3. Circular
-│   ├── 4. Stack
-│   ├── Hash Table
+
+├── .
+│   ├── DSA
+│   │   ├── 2. Searches
+│   │   │   ├── [`fibonnace_search.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/2. Searches/fibonnace_search.cpp)
+│   │   │   ├── [`sentinal_search.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/2. Searches/sentinal_search.cpp)
+│   │   ├── 3. Linked_List
+│   │   │   ├── 1. Singly
+│   │   │   │   ├── [`singly.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/3. Linked_List/1. Singly/singly.cpp)
+│   │   ├── 1. Sorts
+│   │   │   ├── [`bubble_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/1. Sorts/bubble_sort.cpp)
+│   │   │   ├── [`insertion_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/1. Sorts/insertion_sort.cpp)
+│   │   │   ├── [`merge_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/1. Sorts/merge_sort.cpp)
+│   │   │   ├── [`quick_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/1. Sorts/quick_sort.cpp)
+│   │   │   ├── [`selection_sort.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./DSA/1. Sorts/selection_sort.cpp)
+│   ├── C++
+│   │   ├── Number System
+│   │   │   ├── [`armstrong_number.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/Number System/armstrong_number.cpp)
+│   │   │   ├── [`automorphic.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/Number System/automorphic.cpp)
+│   │   │   ├── [`factor_of_number.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/Number System/factor_of_number.cpp)
+│   │   │   ├── [`factorial.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/Number System/factorial.cpp)
+│   │   │   ├── [`reverse_string.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/Number System/reverse_string.cpp)
+│   │   ├── 1. Class and Object
+│   │   │   ├── [`access_specifier.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/1. Class and Object/access_specifier.cpp)
+│   │   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/1. Class and Object/constructor_destructor.cpp)
+│   │   ├── 2. Constructor & Destructor
+│   │   │   ├── [`constructor_destructor.cpp`](https://github.com/OmChannawar/Cpp-Practice/blob/main/./C++/2. Constructor & Destructor/constructor_destructor.cpp)
 └── [`README.md`](./README.md)
 ```
 <!-- FOLDER_STRUCTURE_END -->
