@@ -35,6 +35,7 @@ This repository contains:
 
 ## 📂 Folder Structure
 
+```
 C++ Practice/
 ├── C++
 │   ├── 1_Class & Object
@@ -58,6 +59,9 @@ C++ Practice/
     ├── 4_Stack
     ├── 5_Queue
     └── Hash_Table
+```
+
+---
 
 ## 📚 Learning Goals
 
