@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-int check_num(int n) //371
+int check_num(int n)
 {
     if(n < 0)       //check for negative number
     {
@@ -51,3 +51,14 @@ int main()
 
     return 0;
 }
+
+/*OUTPUT
+
+PS D:\Om\Practice\C++\Number_System> cd "d:\Om\Practice\C++\Number_System\" ; if ($?) { g++ armstrong_number.cpp -o armstrong_number } ; if ($?) { .\armstrong_number }
+Enter number to be checked: 72
+72 is not Armstrong number
+PS D:\Om\Practice\C++\Number_System> cd "d:\Om\Practice\C++\Number_System\" ; if ($?) { g++ armstrong_number.cpp -o armstrong_number } ; if ($?) { .\armstrong_number }
+Enter number to be checked: 371
+371 is Armstrong number
+
+*/

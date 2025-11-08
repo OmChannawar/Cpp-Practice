@@ -38,3 +38,14 @@ int main()
 
     return 0;
 }
+
+/*OUTPUT
+
+PS D:\Om\Practice\C++\Number_System> cd "d:\Om\Practice\C++\Number_System\" ; if ($?) { g++ automorphic.cpp -o automorphic } ; if ($?) { .\automorphic }
+Enter the number to be checked: 25
+25 is an Automorphic number.
+PS D:\Om\Practice\C++\Number_System> cd "d:\Om\Practice\C++\Number_System\" ; if ($?) { g++ automorphic.cpp -o automorphic } ; if ($?) { .\automorphic }
+Enter the number to be checked: 20
+20 is not an Automorphic number.
+
+*/
