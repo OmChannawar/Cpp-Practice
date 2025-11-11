@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void insertionSort(int arr[], int n)        //Time Complexity:- O(n^2)
+void insertionSort(int arr[], int n) // Time Complexity:- O(n^2)
 {
     for (int i = 1; i < n; i++)
     {
