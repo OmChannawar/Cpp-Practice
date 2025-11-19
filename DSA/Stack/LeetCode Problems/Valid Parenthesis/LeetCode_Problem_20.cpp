@@ -49,13 +49,13 @@ int main()
     string input;
 
     cout << "--- Valid Parentheses Checker ---" << endl;
-    cout << "Enter a string (max 6 characters) containing only '(', ')', '{', '}', '[' and ']': ";
+    cout << "Enter a string (max 8 characters) containing only '(', ')', '{', '}', '[' and ']': ";
     cin >> input;
 
-    // Check if the input length exceeds the limit of 6
-    if (input.length() > 6)
+    // Check if the input length exceeds the limit of 8
+    if (input.length() > 8)
     {
-        cout << "Error: Input string exceeds the maximum length of 6." << endl;
+        cout << "Error: Input string exceeds the maximum length of 8." << endl;
         return 1; // Return non-zero to indicate error
     }
 
