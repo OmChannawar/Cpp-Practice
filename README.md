@@ -50,15 +50,16 @@ C++ Practice/
 │   ├── 7_Polymorphism
 │   └── Number System
 └── DSA
-    ├── 1_Sorts
-    ├── 2_Searches
-    ├── 3_Linked_List
-    │   ├── 1_Singly
-    │   ├── 2_Doubly
-    │   └── 3_Circular
-    ├── 4_Stack
-    ├── 5_Queue
-    └── Hash_Table
+    ├── Hash Table
+    ├── Linked List
+    │   ├── Circular
+    │   ├── Doubly
+    │   └── Singly
+    ├── Queue
+    │   └── Double Ended Queue
+    ├── Searches
+    ├── Sorts
+    └── Stack
 ```
 
 ---
