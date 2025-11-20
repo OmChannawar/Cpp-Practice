@@ -37,7 +37,7 @@ This repository contains:
 
 ```
 C++ Practice/
-├── C++
+├── OOPs
 │   ├── 1_Class & Object
 │   ├── 2_Constructor & Destructor
 │   ├── 3_Operator Overloading
