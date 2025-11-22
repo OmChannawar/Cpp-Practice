@@ -37,29 +37,38 @@ This repository contains:
 
 ```
 C++ Practice/
-├── OOPs
-│   ├── 1_Class & Object
-│   ├── 2_Constructor & Destructor
-│   ├── 3_Operator Overloading
-│   ├── 4_Dynamic Memory
-│   ├── 5_Function Types, Friend Class
-│   │   ├── 1_Static Function
-│   │   ├── 2_Inline Function
-│   │   └── 3_Friend Function & Class
-│   ├── 6_Inheritance
-│   ├── 7_Polymorphism
-│   └── Number System
-└── DSA
-    ├── Hash Table
-    ├── Linked List
-    │   ├── Circular
-    │   ├── Doubly
-    │   └── Singly
-    ├── Queue
-    │   └── Double Ended Queue
-    ├── Searches
-    ├── Sorts
-    └── Stack
+├── DSA
+│   ├── Hash Table
+│   ├── Linked List
+│   │   ├── Circular
+│   │   ├── Doubly
+│   │   └── Singly
+│   ├── Queue
+│   │   └── Double Ended Queue
+│   ├── Searches
+│   ├── Sorts
+│   └── Stack
+│
+└── OOPs
+    ├── Array
+    ├── Class & Object
+    ├── Constructor & Destructor
+    ├── Dynamic Memory
+    ├── Inheritance
+    │   ├── Hierarchical
+    │   ├── Hybrid
+    │   ├── Multilevel
+    │   ├── Multiple
+    │   └── Single
+    ├── Matrix
+    ├── Number System
+    ├── Operator OverLoading
+    ├── Polymorphism
+    └── Static, Inline & Friend
+        ├── Friend Class
+        ├── Friend Function
+        ├── Inline Function
+        └── Static Function
 ```
 
 ---
