@@ -1,12 +1,56 @@
+/*
+    Project: Singly Linked List Implementation in C++
+    Developed and Implemented by: Om Channawar
+    Date  : Nov 2025
+
+    ------------------------------------------------------
+    📘 THEORY: What is a Singly Linked List?
+
+    A Singly Linked List is a linear data structure where each element is stored
+    in a separate node. Each node contains:
+        ➤ Data (value)
+        ➤ Pointer to the next node in the list
+
+    Unlike arrays, linked lists are dynamic in nature. Memory is allocated during
+    runtime, allowing efficient insertion and deletion without shifting elements.
+
+    Main Components:
+        📍 Head: Pointer to the first node
+        📍 Tail: Pointer to the last node
+        📍 Next: Points to the next node in the list
+
+    Advantages:
+        ✔ Dynamic size
+        ✔ Efficient insertion/deletion (front/back/position)
+        ✔ No memory wastage
+
+    Disadvantages:
+        ❌ No direct access (must traverse)
+        ❌ Extra memory for pointer storage
+
+    Core Operations in this Program:
+        ➤ Insert at front
+        ➤ Insert at back
+        ➤ Insert at specific position
+        ➤ Delete from front
+        ➤ Delete from back
+        ➤ Reverse list
+        ➤ Display list
+
+    ------------------------------------------------------
+*/
+
 #include <iostream>
 using namespace std;
 
+// Node class for Linked List
 class Node
 {
 public:
     int data;
     Node *next;
 
+    // Constructor to initialize node with value
     Node(int val)
     {
         data = val;
@@ -14,6 +58,7 @@ public:
     }
 };
 
+// Singly Linked List class
 class List
 {
     Node *head;
@@ -25,6 +70,7 @@ public:
         head = tail = NULL;
     }
 
+    // Insert element at the beginning of the list
     void push_front(int val)
     {
         if (head == NULL)
@@ -32,6 +78,7 @@ public:
 
         Node *newNode = new Node(val);
 
+        // If list is empty, both head and tail point to the new node
         if (head == NULL)
             head = tail = newNode;
         else
@@ -43,6 +90,7 @@ public:
         cout << ">>> " << val << " inserted at front" << endl;
     }
 
+    // Insert element at the end of the list
     void push_back(int val)
     {
         if (head == NULL)
@@ -61,6 +109,7 @@ public:
         cout << ">>> " << val << " inserted at back" << endl;
     }
 
+    // Insert element at a specific position
     void push_position(int val, int pos)
     {
         if (pos < 0)
@@ -69,6 +118,7 @@ public:
             return;
         }
 
+        // Handle empty list
         if (head == NULL)
         {
             if (pos == 0)
@@ -77,11 +127,14 @@ public:
                 push_front(val);
             }
             else
+            {
                 cout << ">>> List is empty. Invalid position." << endl;
+            }
 
             return;
         }
 
+        // Insert at front if pos is zero
         if (pos == 0)
         {
             push_front(val);
@@ -89,6 +142,7 @@ public:
         }
 
         Node *temp = head;
+        // Traverse to (pos - 1)th node
         for (int i = 0; i < pos - 1; i++)
         {
             if (temp == NULL)
@@ -106,6 +160,7 @@ public:
         cout << ">>> " << val << " inserted at position " << pos << endl;
     }
 
+    // Delete element from the front
     void pop_front()
     {
         if (head == NULL)
@@ -117,6 +172,7 @@ public:
         Node *temp = head;
         head = head->next;
 
+        // If list becomes empty after deletion
         if (head == NULL)
             tail = NULL;
 
@@ -125,6 +181,7 @@ public:
         cout << ">>> First element deleted" << endl;
     }
 
+    // Delete element from the end
     void pop_back()
     {
         if (head == NULL)
@@ -133,6 +190,7 @@ public:
             return;
         }
 
+        // When only one node exists
         if (head == tail)
         {
             delete head;
@@ -142,6 +200,7 @@ public:
         }
 
         Node *temp = head;
+        // Traverse till second last node
         while (temp->next != tail)
             temp = temp->next;
 
@@ -152,6 +211,7 @@ public:
         cout << ">>> Last element deleted" << endl;
     }
 
+    // Display all elements in the list
     void display()
     {
         if (head == NULL)
@@ -168,6 +228,26 @@ public:
         }
         cout << "NULL" << endl;
     }
+
+    // Reverse the entire linked list
+    void reverse()
+    {
+        Node *curr = head;
+        Node *prev = NULL;
+        Node *next = NULL;
+
+        // Iterate and reverse links
+        while (curr != NULL)
+        {
+            next = curr->next;      // Note: we cannot perform this step before 'curr->next = prev', as we have to store the next node.
+            curr->next = prev;      // Reverse the link
+            prev = curr;
+            curr = next;
+        }
+
+        head = prev; // Update head to new front
+        cout << ">>> List reversed" << endl;
+    }
 };
 
 int main()
@@ -183,8 +263,9 @@ int main()
         cout << "3. Insert at Position\n";
         cout << "4. Delete Front\n";
         cout << "5. Delete Back\n";
-        cout << "6. Display\n";
-        cout << "7. Exit\n";
+        cout << "6. Reverse List\n";
+        cout << "7. Display\n";
+        cout << "8. Exit\n";
 
         cout << "Enter your choice: ";
         cin >> choice;
@@ -213,9 +294,12 @@ int main()
             ll.pop_back();
             break;
         case 6:
-            ll.display();
+            ll.reverse();
             break;
         case 7:
+            ll.display();
+            break;
+        case 8:
             cout << "Exiting..." << endl;
             return 0;
         default:
