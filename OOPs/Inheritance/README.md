@@ -54,16 +54,11 @@ When a child class inherits from a parent class, the **inheritance type** (`publ
 
 ### 📊 Visibility Transformation
 
-|---------------------|------------------------|---------------------------|-------------------------|
 | Parent Class Member |   Public Inheritance   |   Protected Inheritance   |   Private Inheritance   |
 |                     | (`class C : public P`) | (`class C : protected P`) | (`class C : private P`) |
-|---------------------|------------------------|---------------------------|-------------------------|
 | **public**          |   public               |   protected               |   private               |
-|---------------------|------------------------|---------------------------|-------------------------|
 | **protected**       |   protected            |   protected               |   private               |
-|---------------------|------------------------|---------------------------|-------------------------|
 | **private**         |   inaccessible         |   inaccessible            |   inaccessible          |
-|---------------------|------------------------|---------------------------|-------------------------|
 
 ---
 
