@@ -79,8 +79,6 @@ When a child class inherits from a parent class, the **inheritance type** (`publ
 
 ---
 
----
-
 ## Types of inheritance:-
 
 1. [Single Inheritance](./Single/)
