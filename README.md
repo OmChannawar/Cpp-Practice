@@ -44,7 +44,8 @@ C++ Practice/
 │   │   ├── Doubly
 │   │   └── Singly
 │   ├── Queue
-│   │   └── Double Ended Queue
+│   │   ├── Double Ended Queue
+│   │   └── Circular Queue
 │   ├── Searches
 │   ├── Sorts
 │   └── Stack
